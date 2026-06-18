@@ -156,13 +156,16 @@ header {
 
 
 /* ===============================
- Stats
+ Stats Cards
 ================================ */
 
 
 .stats {
+
     background: white;
+
 }
+
 
 
 .stats-box {
@@ -173,29 +176,68 @@ header {
 
     gap: 25px;
 
+}
+
+
+
+.stats-card {
+
+    background: rgba(255, 255, 255, 0.8);
+
+    padding: 35px 25px;
+
     text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(46, 125, 50, 0.15);
+
+    transition: 0.3s;
+
 }
 
 
-.stats-box div {
 
-    background: #eef7ee;
+.stats-card:hover {
 
-    padding: 30px;
+    transform: translateY(-10px);
 
-    border-radius: 15px;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 
-.stats-box h2 {
 
-    font-size: 38px;
+.stats-card i {
+
+    font-size: 35px;
 
     color: #2e7d32;
 
+    margin-bottom: 15px;
+
+}
+
+
+
+.stats-card h2 {
+
+    font-size: 40px;
+
+    color: #1b5e20;
+
     margin-bottom: 10px;
+
+}
+
+
+
+.stats-card p {
+
+    font-weight: 600;
+
+    color: #444;
+
 }
 
 
@@ -544,7 +586,7 @@ footer a {
 .feature-card,
 .product-card,
 .review-card,
-.stats-box div,
+.stats-card,
 .certificate-card {
 
 

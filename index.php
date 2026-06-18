@@ -62,43 +62,93 @@ Get Quote
 <div class="container stats-box">
 
 
-<div>
 
-<h2>500+</h2>
-
-<p>Business Clients</p>
-
-</div>
+<div class="stats-card">
 
 
-
-<div>
-
-<h2>10K+</h2>
-
-<p>Orders Delivered</p>
-
-</div>
+<i class="fa-solid fa-box-open"></i>
 
 
+<h2>
+50+
+</h2>
 
 
-<div>
+<p>
+Product Variants
+</p>
 
-<h2>20+</h2>
-
-<p>Countries Served</p>
 
 </div>
 
 
 
 
-<div>
 
-<h2>100%</h2>
+<div class="stats-card">
 
-<p>Eco Materials</p>
+
+<i class="fa-solid fa-industry"></i>
+
+
+<h2>
+10K+
+</h2>
+
+
+<p>
+Monthly Production Capacity
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="stats-card">
+
+
+<i class="fa-solid fa-leaf"></i>
+
+
+<h2>
+100%
+</h2>
+
+
+<p>
+Biodegradable Materials
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="stats-card">
+
+
+<i class="fa-solid fa-headset"></i>
+
+
+<h2>
+24/7
+</h2>
+
+
+<p>
+Business Support
+</p>
+
 
 </div>
 

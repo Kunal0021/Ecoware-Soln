@@ -50,7 +50,7 @@ links.forEach(function (link) {
 
 const cards = document.querySelectorAll(
 
-    ".feature-card, .product-card, .review-card, .stats-box div, .certificate-card"
+    ".feature-card, .product-card, .review-card, .stats-card, .certificate-card"
 
 );
 
