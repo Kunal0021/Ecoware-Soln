@@ -13,7 +13,8 @@ function openMenu() {
 
 
 
-// Close menu after clicking links
+
+// Close mobile menu after clicking links
 
 
 const links = document.querySelectorAll(".nav-links a");
@@ -42,11 +43,15 @@ links.forEach(function (link) {
 
 
 
-// Scroll animation
+
+
+// Scroll Reveal Animation
 
 
 const cards = document.querySelectorAll(
-    ".feature-card, .product-card, .review-card"
+
+    ".feature-card, .product-card, .review-card, .stats-box div, .certificate-card"
+
 );
 
 
@@ -72,11 +77,18 @@ const observer = new IntersectionObserver(
 
 
     },
+
+
     {
+
         threshold: 0.2
+
     }
 
 );
+
+
+
 
 
 

@@ -5,16 +5,23 @@
 
 
 
+
 <div>
 
+
 <h2>
+
 EcoWare Solutions
+
 </h2>
 
 
 <p>
-Sustainable tableware solutions for modern businesses.
+
+Building a cleaner future with biodegradable tableware solutions.
+
 </p>
+
 
 
 </div>
@@ -22,11 +29,17 @@ Sustainable tableware solutions for modern businesses.
 
 
 
+
+
 <div>
 
+
 <h3>
+
 Quick Links
+
 </h3>
+
 
 
 <a href="#home">Home</a>
@@ -35,8 +48,14 @@ Quick Links
 
 <a href="#products">Products</a>
 
+<a href="#process">Process</a>
+
+
 
 </div>
+
+
+
 
 
 
@@ -45,46 +64,67 @@ Quick Links
 
 
 <h3>
+
 Contact Us
+
 </h3>
 
 
+
 <p>
+
 Email : contact@ecowaresolutions.com
+
 </p>
+
 
 
 <p>
-Phone : +91 7695851999
+
+Phone : +91 9876543210
+
 </p>
+
+
 
 
 
 <div class="icons">
 
+
 <i class="fa-brands fa-facebook"></i>
 
+
 <i class="fa-brands fa-instagram"></i>
+
 
 <i class="fa-brands fa-linkedin"></i>
 
 
-</div>
-
 
 </div>
 
 
 
 </div>
+
+
+
+</div>
+
+
 
 
 
 <p class="copy">
 
-© <?php echo date("Y"); ?> EcoWare Solutions
+
+© <?php echo date("Y"); ?> EcoWare Solutions. All Rights Reserved.
+
 
 </p>
+
+
 
 
 
@@ -92,9 +132,13 @@ Phone : +91 7695851999
 
 
 
+
+
 <script src="assets/js/script.js"></script>
 
 
+
 </body>
+
 
 </html>

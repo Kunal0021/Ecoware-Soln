@@ -1,5 +1,7 @@
 <?php
 
+include("includes/data.php");
+
 include("includes/header.php");
 
 ?>
@@ -9,12 +11,10 @@ include("includes/header.php");
 
 <section class="hero" id="home">
 
-
 <div class="container hero-content">
 
 
 <div class="hero-text">
-
 
 <h1>
 Sustainable Tableware For A Better Tomorrow
@@ -22,13 +22,12 @@ Sustainable Tableware For A Better Tomorrow
 
 
 <p>
-EcoWare Solutions provides premium biodegradable plates, cups,
-bowls and packaging products for businesses that care about
-the environment.
+EcoWare Solutions provides premium biodegradable tableware
+solutions for restaurants, wholesalers and eco-conscious brands.
 </p>
 
 
-<a href="#contact" class="btn">
+<a href="#quote" class="btn">
 Get Quote
 </a>
 
@@ -46,8 +45,73 @@ Get Quote
 
 </div>
 
+</section>
+
+
+
+
+
+
+
+<!-- Stats Section -->
+
+
+<section class="stats">
+
+
+<div class="container stats-box">
+
+
+<div>
+
+<h2>500+</h2>
+
+<p>Business Clients</p>
+
+</div>
+
+
+
+<div>
+
+<h2>10K+</h2>
+
+<p>Orders Delivered</p>
+
+</div>
+
+
+
+
+<div>
+
+<h2>20+</h2>
+
+<p>Countries Served</p>
+
+</div>
+
+
+
+
+<div>
+
+<h2>100%</h2>
+
+<p>Eco Materials</p>
+
+</div>
+
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 
 
@@ -76,9 +140,7 @@ Why Choose EcoWare?
 
 <i class="fa-solid fa-leaf"></i>
 
-<h3>
-Eco Friendly
-</h3>
+<h3>Eco Friendly</h3>
 
 <p>
 Made from natural biodegradable materials.
@@ -89,21 +151,17 @@ Made from natural biodegradable materials.
 
 
 
-
 <div class="feature-card">
 
 <i class="fa-solid fa-box"></i>
 
-<h3>
-Bulk Supply
-</h3>
+<h3>Bulk Supply</h3>
 
 <p>
-Reliable large scale production for businesses.
+Large scale manufacturing support for businesses.
 </p>
 
 </div>
-
 
 
 
@@ -113,12 +171,10 @@ Reliable large scale production for businesses.
 
 <i class="fa-solid fa-palette"></i>
 
-<h3>
-Custom Branding
-</h3>
+<h3>Custom Branding</h3>
 
 <p>
-Personalized packaging and branding options.
+Personalized packaging and branding solutions.
 </p>
 
 </div>
@@ -131,12 +187,10 @@ Personalized packaging and branding options.
 
 <i class="fa-solid fa-earth"></i>
 
-<h3>
-Global Export
-</h3>
+<h3>Global Export</h3>
 
 <p>
-Delivering sustainable products worldwide.
+Supplying sustainable products worldwide.
 </p>
 
 </div>
@@ -150,6 +204,7 @@ Delivering sustainable products worldwide.
 
 
 </section>
+
 
 
 
@@ -167,11 +222,13 @@ Delivering sustainable products worldwide.
 <div class="container about-content">
 
 
+
 <div>
 
 <img src="assets/images/about.jpg" alt="About EcoWare">
 
 </div>
+
 
 
 
@@ -185,14 +242,14 @@ About EcoWare Solutions
 
 <p>
 
-EcoWare Solutions is a sustainable tableware company
-focused on replacing plastic products with eco-friendly
-alternatives.
+EcoWare Solutions focuses on replacing plastic tableware with
+sustainable and biodegradable alternatives.
 
-We work with restaurants, wholesalers and brands to provide
-quality biodegradable products.
+We help restaurants, wholesalers and brands move towards
+environment friendly packaging.
 
 </p>
+
 
 
 <h3>
@@ -202,10 +259,11 @@ Our Mission
 
 <p>
 
-Our mission is to create a cleaner future by delivering
-environment friendly packaging solutions.
+Our mission is to provide reliable eco-friendly solutions
+while supporting a cleaner planet.
 
 </p>
+
 
 
 </div>
@@ -216,6 +274,7 @@ environment friendly packaging solutions.
 
 
 </section>
+
 
 
 
@@ -242,22 +301,103 @@ Our Products
 <div class="product-grid">
 
 
+<?php foreach($products as $product){ ?>
 
 
 <div class="product-card">
 
-<img src="assets/images/plate.jpg">
+
+<img 
+src="assets/images/<?php echo $product['image']; ?>"
+alt="<?php echo $product['name']; ?>">
+
 
 
 <h3>
-Biodegradable Plates
+
+<?php echo $product['name']; ?>
+
 </h3>
 
 
+
 <p>
-Strong and compostable plates for daily use.
+
+<?php echo $product['description']; ?>
+
 </p>
 
+
+
+</div>
+
+
+<?php } ?>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Industries Section -->
+
+
+<section class="industries">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Industries We Serve
+
+</h2>
+
+
+
+<div class="feature-grid">
+
+
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h3>Restaurants</h3>
+
+<p>
+Eco packaging solutions for restaurants.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<i class="fa-solid fa-hotel"></i>
+
+<h3>Hotels</h3>
+
+<p>
+Sustainable solutions for hospitality brands.
+</p>
 
 </div>
 
@@ -265,22 +405,15 @@ Strong and compostable plates for daily use.
 
 
 
+<div class="feature-card">
 
+<i class="fa-solid fa-store"></i>
 
-<div class="product-card">
-
-<img src="assets/images/bowl.jpg">
-
-
-<h3>
-Eco Bowls
-</h3>
-
+<h3>Retail Brands</h3>
 
 <p>
-Natural bowls suitable for food businesses.
+Custom products for retail businesses.
 </p>
-
 
 </div>
 
@@ -288,47 +421,15 @@ Natural bowls suitable for food businesses.
 
 
 
+<div class="feature-card">
 
+<i class="fa-solid fa-truck"></i>
 
-
-<div class="product-card">
-
-<img src="assets/images/cup.jpg">
-
-
-<h3>
-Paper Cups
-</h3>
-
+<h3>Food Delivery</h3>
 
 <p>
-Eco-friendly cups for beverages.
+Durable packaging for delivery companies.
 </p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="product-card">
-
-<img src="assets/images/container.jpg">
-
-
-<h3>
-Food Containers
-</h3>
-
-
-<p>
-Sustainable packaging containers.
-</p>
-
 
 </div>
 
@@ -341,6 +442,7 @@ Sustainable packaging containers.
 
 
 </section>
+
 
 
 
@@ -352,7 +454,6 @@ Sustainable packaging containers.
 <!-- Work Process -->
 
 
-
 <section class="process" id="process">
 
 
@@ -360,13 +461,14 @@ Sustainable packaging containers.
 
 
 <h2 class="section-title">
+
 Our Work Process
+
 </h2>
 
 
 
 <div class="steps">
-
 
 
 <div>
@@ -375,12 +477,10 @@ Our Work Process
 </div>
 
 
-
 <div>
 <span>2</span>
-<p>Product Customization</p>
+<p>Customization</p>
 </div>
-
 
 
 <div>
@@ -389,14 +489,10 @@ Our Work Process
 </div>
 
 
-
-
 <div>
 <span>4</span>
 <p>Quality Check</p>
 </div>
-
-
 
 
 <div>
@@ -405,9 +501,7 @@ Our Work Process
 </div>
 
 
-
 </div>
-
 
 
 </div>
@@ -422,8 +516,122 @@ Our Work Process
 
 
 
-<!-- Customer Reviews -->
 
+
+<!-- Quality Standards -->
+
+
+<section class="certificates">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Quality Standards
+
+</h2>
+
+
+
+
+<div class="certificate-box">
+
+
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-seedling"></i>
+
+<h3>
+Biodegradable Certified
+</h3>
+
+<p>
+Manufactured using compostable materials.
+</p>
+
+</div>
+
+
+
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h3>
+Food Safe Materials
+</h3>
+
+<p>
+Safe materials suitable for food packaging.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-recycle"></i>
+
+<h3>
+Plastic Free Products
+</h3>
+
+<p>
+Reducing plastic usage through sustainable solutions.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h3>
+Quality Tested
+</h3>
+
+<p>
+Products pass quality checks before delivery.
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Reviews -->
 
 
 <section class="reviews">
@@ -443,28 +651,7 @@ Customer Reviews
 <div class="review-grid">
 
 
-
-<div class="review-card">
-
-
-<p>
-
-"EcoWare helped our restaurant switch completely to
-sustainable packaging."
-
-</p>
-
-
-<h4>
-- Rahul Sharma
-</h4>
-
-
-
-</div>
-
-
-
+<?php foreach($reviews as $review){ ?>
 
 
 <div class="review-card">
@@ -472,41 +659,22 @@ sustainable packaging."
 
 <p>
 
-"Good product quality and reliable bulk delivery service."
+"<?php echo $review['text']; ?>"
 
 </p>
 
 
 <h4>
-- Priya Mehta
+
+- <?php echo $review['name']; ?>
+
 </h4>
 
 
-
 </div>
 
 
-
-
-
-
-<div class="review-card">
-
-
-<p>
-
-"Perfect partner for eco-friendly business solutions."
-
-</p>
-
-
-<h4>
-- Aman Verma
-</h4>
-
-
-
-</div>
+<?php } ?>
 
 
 
@@ -514,10 +682,68 @@ sustainable packaging."
 
 
 </div>
-
 
 
 </section>
+
+
+
+
+
+
+
+
+
+<!-- Contact Form -->
+
+
+<section class="contact-form" id="quote">
+
+
+<div class="container">
+
+
+<h2 class="section-title">
+
+Request A Quote
+
+</h2>
+
+
+
+
+<form>
+
+
+<input 
+type="text"
+placeholder="Your Name">
+
+
+<input 
+type="email"
+placeholder="Email Address">
+
+
+<textarea placeholder="Enter your business requirement"></textarea>
+
+
+<button>
+
+Submit Inquiry
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
 
 
 

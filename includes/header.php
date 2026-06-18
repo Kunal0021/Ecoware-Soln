@@ -1,16 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 
 <head>
 
+
 <meta charset="UTF-8">
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
 <title>
+
 EcoWare Solutions
+
 </title>
+
 
 
 <link rel="stylesheet" href="assets/css/style.css">
@@ -21,10 +29,14 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
+
 </head>
 
 
+
+
 <body>
+
 
 
 <header>
@@ -60,21 +72,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 
 <li>
+<a href="#process">Process</a>
+</li>
+
+
+<li>
 <a href="#contact">Contact</a>
 </li>
 
-<li>
-<a href="#process">Process</a>
-</li>
 
 
 </ul>
 
 
 
+
 <div class="menu-btn" onclick="openMenu()">
 
+
 <i class="fa-solid fa-bars"></i>
+
 
 </div>
 

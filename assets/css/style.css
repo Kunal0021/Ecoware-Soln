@@ -2,7 +2,6 @@
    Basic Setup
 ================================ */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -11,54 +10,34 @@
 
 
 html {
-
     scroll-behavior: smooth;
-
 }
 
 
 body {
-
     font-family: Arial, Helvetica, sans-serif;
-
     background: #fafafa;
-
     color: #222;
-
 }
-
 
 
 .container {
-
     width: 90%;
-
     max-width: 1200px;
-
     margin: auto;
-
 }
-
 
 
 section {
-
     padding: 80px 0;
-
 }
 
 
-
 .section-title {
-
     text-align: center;
-
     font-size: 35px;
-
     margin-bottom: 45px;
-
     color: #1b5e20;
-
 }
 
 
@@ -68,88 +47,55 @@ section {
 ================================ */
 
 
-
 header {
-
     background: white;
-
     position: sticky;
-
     top: 0;
-
     z-index: 100;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-
 }
-
 
 
 .navbar {
-
     height: 75px;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
 }
-
 
 
 .logo {
-
     font-size: 25px;
-
     font-weight: bold;
-
     color: #2e7d32;
-
 }
-
 
 
 .nav-links {
-
     display: flex;
-
     list-style: none;
-
     gap: 30px;
-
 }
-
 
 
 .nav-links a {
-
     text-decoration: none;
-
     color: #333;
-
     font-weight: 600;
-
 }
-
 
 
 .nav-links a:hover {
-
     color: #2e7d32;
-
 }
-
 
 
 .menu-btn {
-
     display: none;
-
     font-size: 25px;
-
 }
+
+
 
 
 
@@ -159,94 +105,67 @@ header {
 
 
 .hero {
-
     background: #eef7ee;
-
 }
-
 
 
 .hero-content {
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
-    align-items: center;
-
     gap: 50px;
-
+    align-items: center;
 }
-
 
 
 .hero h1 {
-
     font-size: 50px;
-
     color: #1b5e20;
-
     margin-bottom: 20px;
-
 }
-
 
 
 .hero p {
-
     font-size: 18px;
-
     line-height: 1.7;
-
     margin-bottom: 25px;
-
 }
-
 
 
 .hero img {
-
     width: 100%;
-
     border-radius: 20px;
-
 }
-
 
 
 .btn {
-
     display: inline-block;
-
     padding: 14px 30px;
-
     background: #2e7d32;
-
     color: white;
-
-    text-decoration: none;
-
     border-radius: 30px;
-
+    text-decoration: none;
 }
-
 
 
 .btn:hover {
-
     background: #1b5e20;
-
 }
+
+
 
 
 
 /* ===============================
- Features
+ Stats
 ================================ */
 
 
+.stats {
+    background: white;
+}
 
-.feature-grid {
+
+.stats-box {
 
     display: grid;
 
@@ -254,11 +173,61 @@ header {
 
     gap: 25px;
 
+    text-align: center;
+}
+
+
+.stats-box div {
+
+    background: #eef7ee;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.stats-box h2 {
+
+    font-size: 38px;
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
 }
 
 
 
-.feature-card {
+
+
+
+/* ===============================
+ Cards Common
+================================ */
+
+
+.feature-grid,
+.product-grid,
+.review-grid,
+.certificate-box {
+
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+
+
+.feature-card,
+.review-card,
+.certificate-card {
+
 
     background: white;
 
@@ -270,11 +239,23 @@ header {
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
+    transition: 0.3s;
+
+}
+
+
+.feature-card:hover,
+.product-card:hover,
+.certificate-card:hover {
+
+    transform: translateY(-8px);
+
 }
 
 
 
-.feature-card i {
+.feature-card i,
+.certificate-card i {
 
     font-size: 35px;
 
@@ -286,10 +267,14 @@ header {
 
 
 
+
+
+
+
+
 /* ===============================
  About
 ================================ */
-
 
 
 .about-content {
@@ -301,9 +286,7 @@ header {
     gap: 50px;
 
     align-items: center;
-
 }
-
 
 
 .about img {
@@ -311,19 +294,16 @@ header {
     width: 100%;
 
     border-radius: 20px;
-
 }
 
 
-
-.about h2 {
+.about h2,
+.certificate-card h3 {
 
     color: #1b5e20;
 
-    margin-bottom: 20px;
-
+    margin-bottom: 15px;
 }
-
 
 
 .about p {
@@ -331,8 +311,11 @@ header {
     line-height: 1.7;
 
     margin-bottom: 20px;
-
 }
+
+
+
+
 
 
 
@@ -341,22 +324,10 @@ header {
 ================================ */
 
 
-
-.products {
+.products,
+.certificates {
 
     background: #eef7ee;
-
-}
-
-
-
-.product-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
 
 }
 
@@ -374,18 +345,9 @@ header {
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 
-    transition: 0.3s;
+    transition: .3s;
 
 }
-
-
-
-.product-card:hover {
-
-    transform: translateY(-8px);
-
-}
-
 
 
 .product-card img {
@@ -395,7 +357,6 @@ header {
     height: 220px;
 
     object-fit: cover;
-
 }
 
 
@@ -403,7 +364,6 @@ header {
 .product-card h3 {
 
     margin: 15px 0;
-
 }
 
 
@@ -411,8 +371,11 @@ header {
 .product-card p {
 
     padding: 0 20px 25px;
-
 }
+
+
+
+
 
 
 
@@ -428,9 +391,7 @@ header {
     justify-content: space-between;
 
     text-align: center;
-
 }
-
 
 
 .steps span {
@@ -446,49 +407,79 @@ header {
     display: inline-block;
 
     margin-bottom: 15px;
-
 }
+
+
+
+
+
 
 
 
 /* ===============================
- Reviews
+ Contact Form
 ================================ */
 
 
-.review-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-
-}
-
-
-
-.review-card {
+.contact-form {
 
     background: white;
+}
 
-    padding: 30px;
 
-    border-radius: 15px;
+form {
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
 
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+input,
+textarea {
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+textarea {
+
+    height: 130px;
+
+    resize: none;
 }
 
 
 
-.review-card p {
+button {
 
-    line-height: 1.6;
+    background: #2e7d32;
 
-    margin-bottom: 20px;
+    color: white;
 
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
 }
+
+
+
 
 
 
@@ -498,7 +489,6 @@ header {
 ================================ */
 
 
-
 footer {
 
     background: #1b5e20;
@@ -506,9 +496,7 @@ footer {
     color: white;
 
     padding: 50px 0 20px;
-
 }
-
 
 
 .footer-content {
@@ -518,9 +506,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 30px;
-
 }
-
 
 
 footer a {
@@ -532,17 +518,6 @@ footer a {
     text-decoration: none;
 
     margin: 10px 0;
-
-}
-
-
-
-.icons i {
-
-    margin-right: 15px;
-
-    font-size: 22px;
-
 }
 
 
@@ -552,8 +527,48 @@ footer a {
     text-align: center;
 
     margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ Animation
+================================ */
+
+
+.feature-card,
+.product-card,
+.review-card,
+.stats-box div,
+.certificate-card {
+
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .6s;
 
 }
+
+
+.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+
+
+
+
 
 
 
@@ -569,23 +584,28 @@ footer a {
     .about-content,
     .footer-content {
 
+
         grid-template-columns: 1fr;
 
-    }
 
+    }
 
 
     .feature-grid,
     .product-grid,
-    .review-grid {
+    .review-grid,
+    .certificate-box,
+    .stats-box {
+
 
         grid-template-columns: repeat(2, 1fr);
+
 
     }
 
 
-
 }
+
 
 
 
@@ -594,15 +614,16 @@ footer a {
 
     .nav-links {
 
+
         position: absolute;
 
         top: 75px;
 
         right: -100%;
 
-        background: white;
-
         width: 100%;
+
+        background: white;
 
         flex-direction: column;
 
@@ -610,7 +631,8 @@ footer a {
 
         padding: 30px;
 
-        transition: 0.4s;
+        transition: .4s;
+
 
     }
 
@@ -641,9 +663,13 @@ footer a {
 
     .feature-grid,
     .product-grid,
-    .review-grid {
+    .review-grid,
+    .certificate-box,
+    .stats-box {
+
 
         grid-template-columns: 1fr;
+
 
     }
 
@@ -658,27 +684,5 @@ footer a {
     }
 
 
-}
-
-/* Animation */
-
-.feature-card,
-.product-card,
-.review-card {
-
-    opacity: 0;
-
-    transform: translateY(40px);
-
-    transition: 0.6s;
-
-}
-
-
-.show {
-
-    opacity: 1;
-
-    transform: translateY(0);
 
 }
